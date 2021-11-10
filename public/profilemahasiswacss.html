@@ -1,0 +1,177 @@
+<html>
+
+
+<head>
+    <title>Mahasiswa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(204, 183, 147);
+            font-family: 'Kaisei HarunoUmi', serif;
+        }
+
+        table,
+        th,
+        td {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: 1px dotted black;
+        }
+
+        .judul {
+            text-align: center;
+            color: rgb(48, 29, 5);
+            font-size: x-large;
+            font-weight: bold;
+            text-shadow: 0px 0px 6px;
+            letter-spacing: 0.02em;
+        }
+
+        .colorChanging {
+            animation: color-change 1s infinite;
+        }
+
+        @keyframes color-change {
+            0% {
+                color: yellow;
+            }
+
+            50% {
+                color: yellowgreen;
+            }
+
+            100% {
+                color: violet;
+            }
+        }
+
+        .centerImage {
+            text-align: center;
+            display: block;
+        }
+
+        .column {
+
+            float: left;
+            width: 33.33%;
+            padding: 20px;
+        }
+
+        .row {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        a:link {
+            color: currentColor;
+        }
+
+        a:visited {
+            color: darkcyan;
+        }
+
+        a:hover {
+            color: darkgoldenrod;
+        }
+
+        a:active {
+            color: darkseagreen;
+        }
+
+        .c0 {
+            opacity: 0.5;
+            transition: opacity 1s;
+        }
+
+        .c0:hover {
+            opacity: 1
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="judul">
+        <div class="colorChanging">
+            <h1>Profile Mahasiswa</h1>
+            <hr>
+        </div>
+    </div>
+
+    <div class="centerImage">
+
+        <div class="c0">
+            <img src="./image/foto.jpg" width="400" height="450">
+        </div>
+
+        <hr>
+        <table>
+            <caption>Identitas</caption>
+            <tr>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Tempat, Tanggal Lahir</th>
+            </tr>
+            <tr>
+                <td>Faraz Nurdini</td>
+                <td>19 Tahun</td>
+                <td>Bontang, 17 Mei 2002</td>
+            </tr>
+            <tr>
+                <th>Domisili</th>
+                <th>Hobi</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Bontang</td>
+                <td>Gambar</td>
+                <td>faraznurdini1@gmail.com</td>
+            </tr>
+        </table>
+        <hr>
+
+        <dl>
+            <dt><b>Alamat:</b></dt>
+            <dd>Jln. Gn. Krakatau, Perumahan HOP 2, Kelurahan Satimpo,
+                <br> Kecamatan Bontang Selatan, Kota Bontang
+            </dd>
+            <dt><b>Nomor HP:</b></dt>
+            <dd>(+62)82299795389</dd>
+        </dl>
+        <hr>
+
+        <p><b>Media Social</b></p>
+
+        <br>
+        <div class="row">
+            <div class="column">
+                <a href="https://www.instagram.com/sa_faraz04/">
+                    <img alt="Qries" src="./image/instagram acc.png" width="50" height="50">
+                    <p>sa_faraz04</p>
+                </a>
+                <br>
+
+                <br>
+            </div>
+            <div class="column">
+                <a href="https://www.instagram.com/bleich_det/">
+                    <img alt="Qries" src="./image/instagram acc.png" width="50" width="50">
+                    <p>bleich_det</p>
+                </a>
+                <br>
+
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
