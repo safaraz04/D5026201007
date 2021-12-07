@@ -13,10 +13,15 @@ class AbsenController extends Controller
 
         return view('absen.index', ['absen' => $absen]);
     }
+    // method untuk menampilkan view form tambah absen
     public function tambah()
     {
-        return view('absen.tambah');
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get();
+
+        // memanggil view tambah
+        return view('absen.tambah', ['pegawai' => $pegawai]);
     }
+
     public function store(Request $request)
     {
         DB::table('absen')->insert([
@@ -27,11 +32,20 @@ class AbsenController extends Controller
         return redirect('/absen');
     }
 
+    // method untuk edit data absen
     public function edit($id)
     {
+        // mengambil data absen berdasarkan id yang dipilih
         $absen = DB::table('absen')->where('id_absen', $id)->get();
-        return view('absen.edit', ['absen' => $absen]);
+
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get();
+
+        $status = "Sedang Mengedit";
+
+        // passing data absen yang didapat ke view edit.blade.php
+        return view('absen.edit', ['absen' => $absen, 'pegawai' => $pegawai, 'status' => $status]);
     }
+
     public function update(Request $request)
     {
         // update data pegawai
@@ -40,6 +54,16 @@ class AbsenController extends Controller
             'tanggal_absen' => $request->tanggal,
             'status_absen' => $request->status
         ]);
+        // alihkan halaman ke halaman pegawai
+        return redirect('/absen');
+    }
+
+    // method untuk hapus data pegawai
+    public function hapus($id)
+    {
+        // menghapus data pegawai berdasarkan id yang dipilih
+        DB::table('absen')->where('id_absen', $id)->delete();
+
         // alihkan halaman ke halaman pegawai
         return redirect('/absen');
     }
