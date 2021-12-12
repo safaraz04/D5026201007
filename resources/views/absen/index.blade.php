@@ -1,8 +1,7 @@
-<html>
-<head>
-	<title>Absensi Pegawai</title>
-</head>
-<body>
+@extends('layout.happy')
+@section('title', 'Data Absen')
+
+@section('konten')
 
 	<h3>Data Absensi Pegawai</h3>
 
@@ -33,5 +32,4 @@
 	</table>
 
 
-</body>
-</html>
+@endsection

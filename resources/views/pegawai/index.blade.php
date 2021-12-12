@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Data Pegawai</title>
-</head>
-<body>
+@extends('layout.happy')
+@section('title', 'Data Pegawai')
+
+@section('konten')
 
 	<h3>Data Pegawai</h3>
 
@@ -35,6 +33,4 @@
 		@endforeach
 	</table>
 
-
-</body>
-</html>
+@endsection

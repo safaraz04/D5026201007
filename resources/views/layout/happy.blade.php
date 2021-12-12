@@ -37,10 +37,10 @@
 
     <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%" >
             <h3 class="w3-bar-item">Menu</h3>
-            <a href="#" class="w3-bar-item w3-button">Pegawai</a>
-            <a href="#" class="w3-bar-item w3-button">Absen</a>
+            <a href="/pegawai" class="w3-bar-item w3-button">Pegawai</a>
+            <a href="/absen" class="w3-bar-item w3-button">Absen</a>
             <a href="#" class="w3-bar-item w3-button">Minggu Depan</a>
-            <a href="#" class="w3-bar-item w3-button">Praktikum</a>
+            <a href="/sepeda" class="w3-bar-item w3-button">Praktikum</a>
     </div>
 
     <div style="margin-left:15%">

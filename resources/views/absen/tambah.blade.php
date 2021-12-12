@@ -1,6 +1,5 @@
 @extends('layout.happy')
 @section('title', 'Data Absen')
-@section('judulhalaman', 'DATA ABSEN')
 
 @section('konten')
     <a href="/absen"> Kembali</a>

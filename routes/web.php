@@ -41,6 +41,14 @@ Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
 
+Route::get('/sepeda','SepedaController@index');
+Route::get('/sepeda/tambah','SepedaController@tambah');
+Route::post('/sepeda/store','SepedaController@store');
+Route::get('/sepeda/edit/{id}','SepedaController@edit');
+Route::post('/sepeda/update','SepedaController@update');
+Route::get('/sepeda/hapus/{id}','SepedaController@hapus');
+Route::get('/sepeda/cari','SepedaController@cari');
+
 
 
 
