@@ -50,6 +50,10 @@ Route::get('/sepeda/hapus/{id}','SepedaController@hapus');
 Route::get('/sepeda/cari','SepedaController@cari');
 
 
+Route::get('/karyawan','KaryawanController@index');
+Route::get('/karyawan/edit/{id}','KaryawanController@edit');
+Route::post('/karyawan/update','KaryawanController@update');
+Route::get('/karyawan/view','KaryawanController@view');
 
 
 
